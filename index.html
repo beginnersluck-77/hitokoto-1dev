@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+    <title>匿名ひとこと</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+        <h1>匿名ひとこと</h1>
+
+        <div id="startScreen">
+
+        <button id="startButton">
+            開始
+        </button>
+
+        </div>
+
+        <div id="playerCountScreen" style="display: none;">
+
+        <h2>何人で遊ぶ？</h2>
+
+        <input
+            type="number"
+            id="playerCountInput"
+            min="2"
+            max="20"
+            placeholder="人数を入力"
+        >
+
+        <br><br>
+
+        <button id="nextButton">
+            次へ
+        </button>
+        </div>
+
+        <div id="nameInputScreen" style="display: none;">
+
+        <h2 id="nameTitle">
+            1人目の名前を入力
+        </h2>
+
+        <input
+            type="text"
+            id="nameInput"
+            placeholder="名前を入力"
+        >
+
+        <br><br>
+
+        <button id="saveNameButton">
+            保存
+        </button>
+
+        </div>
+
+        <div id="messageScreen" style="display: none;">
+
+            <h2 id="messageTitle">
+                メッセージ入力
+            </h2>
+
+            <p id="targetText">
+            </p>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="ひとことを入力"
+            >
+
+            <br><br>
+
+            <button id="sendMessageButton">
+                送信
+            </button>
+
+        </div>
+
+        <div id="resultScreen" style="display: none;">
+
+        <h2 id="resultName"></h2>
+
+        <p id="resultMessage"></p>
+
+        <button id="nextResultButton">
+            次へ
+        </button>
+
+        </div>
+
+        <div id="passScreen" style="display: none;">
+
+            <h2>スマホを次の人に渡してください</h2>
+
+            <p>
+                準備ができたら押してください
+            </p>
+
+            <button id="continueButton">
+                次の人へ
+            </button>
+
+        </div>
+
+        <div id="announcementScreen" style="display:none;">
+
+            <h2>🎉 発表開始 🎉</h2>
+
+            <p>
+                全員のひとことを見ていきましょう
+            </p>
+
+            <button id="startAnnouncementButton">
+                発表する
+            </button>
+
+        </div>
+
+    </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
